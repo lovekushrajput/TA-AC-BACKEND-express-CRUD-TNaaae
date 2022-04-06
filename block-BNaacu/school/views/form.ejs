@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Students Registeration Form</h1>
+
+    <form action="/students", method="POST">
+ <input type="text" placeholder="Enter Student Name" name="name"> <br>
+ <input type="text"  placeholder="Enter Student Class" name="class"> <br>
+ <input type="text"  placeholder="Enter School Name" name="school"> <br>
+ <input type="submit" value="Register">
+   </form>  
+
+
+   <style>
+       body{
+           background: linear-gradient(to left, pink,orange,lightblue);
+           width: 100%;
+       }
+       h1{
+           text-align: center;
+       }
+       form {
+           text-align: center;
+       }
+
+       input{
+           width: 30%;
+           padding: 0.4rem 0;
+           margin-bottom: 0.6rem;
+       }
+       input:focus{
+           outline-color: blue;
+       }
+   </style>
+</body>
+</html>
