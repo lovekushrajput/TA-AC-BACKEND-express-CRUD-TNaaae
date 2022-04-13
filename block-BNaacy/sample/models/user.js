@@ -6,6 +6,6 @@ let userSchema = new Schema({
     email: String
 },{ timestamps:true }) 
 
-let user = mongoose.model("user",userSchema)
+let User = mongoose.model("User",userSchema)
 
-module.exports = user
+module.exports = User
