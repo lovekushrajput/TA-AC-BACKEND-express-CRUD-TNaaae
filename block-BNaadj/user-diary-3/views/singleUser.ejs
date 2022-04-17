@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/users">Back</a>
+                </li>
+                <li>
+                    <a href="/users/new">Add User</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Single User Details</h1>
+    <h2>
+        Name: <%= user.name %>
+    </h2>
+    <h2>
+        Email: <%= user.email %>
+    </h2>
+    <address>
+        Address: <%= user.address %>
+    </address>
+
+    <p>
+        Bio: <%= user.bio %>
+    </p>
+
+    <p>
+        Hobbies: <%= user.hobbies %>
+    </p>
+
+    <a href="/users/<%=user._id%>/edit">
+        Edit
+    </a>
+
+    <a href="/users/<%=user._id%>/delete">
+        Delete
+    </a>
+
+    <a href="/users">
+        All Users
+    </a>
+</body>
+
+</html>
