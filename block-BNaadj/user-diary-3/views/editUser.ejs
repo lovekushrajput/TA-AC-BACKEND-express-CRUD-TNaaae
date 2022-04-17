@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Back</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="/users/<%=updatedUser._id%>" , method="POST">
+        <input type="text" name="name" placeholder="Name" value="<%=updatedUser.name%>">
+        <input type="email" name="email" placeholder="Email" value="<%=updatedUser.email%>">
+        <input type="number" name="age" placeholder="Age" value="<%=updatedUser.age%>">
+        <input type="text" name="address" placeholder="Address" value="<%=updatedUser.address%>">
+        <input type="text" name="bio" placeholder="Bio" value="<%=updatedUser.bio%>">
+        <input type="text" name="hobbies" placeholder="Hobbies" value="<%=updatedUser.hobbies%>">
+        <input type="submit" value="Update User">
+    </form>
+
+</body>
+
+</html>
