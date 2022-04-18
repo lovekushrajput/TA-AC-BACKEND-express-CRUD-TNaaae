@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custom */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+header{
+   box-shadow: 4px 3px 4px 1px rgba(0, 0, 0, 0.5);
+   background-color: cadetblue;
+   padding: 0.5rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul  a{
+ color: white;
+font-weight: 600;
+ padding: 0.2rem;
+}
+
+
+h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: gray;
+    margin-left: 2rem;
+}
+
+.details-div{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: inline-block;
+}
+
+.userDetails{
+    display: flex;
+    color: rgb(69, 67, 67);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 0.7rem;
+    padding: 0.2rem;
+}
+
+/* index-page */
+
+.index{
+    text-align: center;
+}
+
+.index a{
+   border: 4px dashed rgb(255, 255, 255);
+   background-color: rgb(7, 31, 62);
+   color: rgb(248, 248, 248);
+    padding: 0.8rem 0.6rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* singleuser-page */
+.single{
+    margin-top: 1rem;
+    border: 3px solid rgb(46, 46, 46);
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.common{
+    color: gray;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+}
+
+.btn{
+    padding: 0.3rem 0.8rem;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.bg-green{
+    background-color: rgb(72,187,120);
+}
+
+.bg-red{
+    background-color: rgb(197, 46, 46);
+}
+
+.bg-blue{
+    background-color: burlywood;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 0.8rem;
+    justify-content: space-between;
+}
+
+.all-btn{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* user-form */
+.form{
+    display: flex;
+    justify-content: center;
+    height: 93vh;
+    align-items: center;
+  
+}
+form{
+    width: 50%;
+    border: 2px solid rgb(228,230,238);
+    padding: 1rem;
+    color: grey;
+}
+form input{
+     width: 100%;
+     padding: 0.5rem;
+     margin-top: 1rem;
+     border: 1px solid #d4d4d4;
+     border-radius: 0.3rem;
+     outline-color: #62A8E4;
+}
+
+
+
+.add-usr{
+    color: #62A8E4;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+.add-btn{
+    width: 16%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.update-btn{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: 1.1rem;
+}
