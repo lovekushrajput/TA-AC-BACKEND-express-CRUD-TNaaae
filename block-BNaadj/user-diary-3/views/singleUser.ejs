@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     </style>
@@ -26,35 +26,49 @@
         </nav>
     </header>
     <h1>Single User Details</h1>
-    <h2>
+
+    <section class="single-section">
+
+  
+
+    <div class="single">
+    <h2 class="common">
         Name: <%= user.name %>
     </h2>
-    <h2>
+    <h2 class="common">
         Email: <%= user.email %>
     </h2>
-    <address>
+    <address class="common">
         Address: <%= user.address %>
     </address>
 
-    <p>
+    <p class="common">
         Bio: <%= user.bio %>
     </p>
 
-    <p>
+    <p class="common">
         Hobbies: <%= user.hobbies %>
     </p>
 
-    <a href="/users/<%=user._id%>/edit">
-        Edit
-    </a>
+    <div class="buttons">
+        <a href="/users/<%=user._id%>/edit" class="btn bg-green">
+            Edit
+        </a>
+    
+        <a href="/users/<%=user._id%>/delete" class="btn bg-red">
+            Delete
+        </a>
+    </div>
+</div>
 
-    <a href="/users/<%=user._id%>/delete">
-        Delete
-    </a>
-
-    <a href="/users">
+<div class="all-btn">
+    <a href="/users" class="btn bg-blue">
         All Users
     </a>
+</div>
+
+
+    </section>
 </body>
 
 </html>

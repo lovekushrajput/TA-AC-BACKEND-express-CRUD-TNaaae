@@ -118,7 +118,94 @@ h1{
     margin-top: 1rem;
 }
 
-/* form */
-form{
+/* singleuser-page */
+.single{
+    margin-top: 1rem;
+    border: 3px solid rgb(46, 46, 46);
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.common{
+    color: gray;
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+}
+
+.btn{
+    padding: 0.3rem 0.8rem;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.bg-green{
+    background-color: rgb(72,187,120);
+}
+
+.bg-red{
+    background-color: rgb(197, 46, 46);
+}
+
+.bg-blue{
+    background-color: burlywood;
+}
+
+.buttons{
     display: flex;
+    margin-top: 0.8rem;
+    justify-content: space-between;
+}
+
+.all-btn{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* user-form */
+.form{
+    display: flex;
+    justify-content: center;
+    height: 93vh;
+    align-items: center;
+  
+}
+form{
+    width: 50%;
+    border: 2px solid rgb(228,230,238);
+    padding: 1rem;
+    color: grey;
+}
+form input{
+     width: 100%;
+     padding: 0.5rem;
+     margin-top: 1rem;
+     border: 1px solid #d4d4d4;
+     border-radius: 0.3rem;
+     outline-color: #62A8E4;
+}
+
+
+
+.add-usr{
+    color: #62A8E4;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+.add-btn{
+    width: 16%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.update-btn{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: 1.1rem;
 }
